@@ -1,0 +1,75 @@
+.team {
+  background-color: $background-color-teams;
+
+  &__container {
+    padding: 60px 15px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $black-text;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+  }
+  &__item {
+    @media (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    @media (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    background-color: $white-text;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__box {
+    padding: 30px 0 24px 0;
+  }
+
+  &__name {
+    color: $black-text;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__position {
+    color: $gray-text;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}
